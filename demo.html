@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine Motu❤️?</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .gif-container {
+            margin-top: 20px;
+            margin-bottom: 120px; /* Adjust to make space for footer */
+            width: 90%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gif-overlay {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            max-width: 100%;
+            max-height: 300px; /* Adjust maximum height as needed */
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #e44d26;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h2:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            display: block; /* Change to "inline-block" if you want them to be inline */
+            margin: 10px auto; /* Center the buttons horizontally */
+            font-size: 20px;
+            padding: 15px 40px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        #yesButton {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #noButton {
+            background-color: #f44336;
+            color: white;
+        }
+
+        #yesButton:hover,
+        #noButton:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+            z-index: 9999; /* Ensure footer is above other content */
+            margin-top: auto; /* Adjust for auto margin */
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #e44d26;
+        }
+
+        /* Style for text overlay */
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="gif-container">
+        <img class="gif-overlay" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="Love Bear">
+        <div class="container">
+            <h2>Will you be my Valentine Motu❤️?</h2>
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Designed with <span style="color: #e44d26;">❤️</span> by <a href="https://example.com" style="color: #fff; text-decoration: none;">Janki</a></p>
+        </div>
+    </footer>
+
+    <script>
+        let yesButton = document.getElementById('yesButton');
+        let noButton = document.getElementById('noButton');
+        let gifContainer = document.querySelector('.gif-container');
+        let currentIndex = 0;
+    
+        yesButton.addEventListener('click', function () {
+            // Hide the "Will you be my Valentine Motu❤️?" text
+            let h2Element = document.querySelector('h2');
+            h2Element.style.display = 'none';
+    
+            // Remove unnecessary elements
+            yesButton.style.display = 'none';
+            noButton.style.display = 'none';
+    
+            // Replace the GIF with the provided URL
+            let gifImage = document.querySelector('.gif-overlay');
+            gifImage.src = 'https://media.tenor.com/hDWprNISP18AAAAi/cartoon-brown-bear.gif';
+    
+            // Create a new element to display the message
+            let messageElement = document.createElement('p');
+            messageElement.textContent = "WOOOO!!! love you Nonsense!!😍";
+            messageElement.style.color = '#e44d26'; // Text color
+            messageElement.style.fontFamily = 'Arial, sans-serif'; // Font family
+            messageElement.style.fontSize = '24px'; // Font size
+            messageElement.style.fontWeight = 'bold'; // Font weight
+            messageElement.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)'; // Text shadow
+            // Append the message element to the container
+            gifContainer.appendChild(messageElement);
+        });
+    
+        noButton.addEventListener('click', function () {
+            // Increase the font size of the Yes button on each click of No
+            let fontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
+            let newSize = parseInt(fontSize) + 5;
+            yesButton.style.fontSize = newSize + 'px';
+    
+            // Change the text of the No button to alternate options
+            let options = ['Pls', 'Are you sure?', 'What if Im really nice person?', 'Motu please😒', 'Kandhi pedhya pls😒', 'Dobiii', 'I am going to die', 'Yep im dead', 'PRETTY PLEASE', 'I will never say Motu', 'gives u rose place of zhandu', 'bring icecube fy', 'will play uno', 'give u loan on 0 ROI', 'will see some sunset', 'No',
+             'No😒', 'No😒😒', 'No😒😒😒', 'No😒😒😒😒', 'Ab to Yes bol','No😒😒😒😒', 'No😒😒😒', 'No😒😒', 'No😒',
+             'No😒', 'No😒😒','Ab to Yes bol', 'No😒😒😒', 'No😒😒😒😒',
+             'No😒😒😒😒', 'No😒😒😒', 'No😒😒', 'No😒',
+             'Ab to Yes bol',
+             'No😒', 'No😒😒', 'No😒😒😒', 'No😒😒😒😒',
+             'Ab to Yes bol',
+             'No😒😒😒😒', 'No😒😒😒', 'No😒😒', 'No😒',
+             'Ab to Yes bol',
+            ];
+    
+            // Change the text of the No button and increment currentIndex
+            noButton.textContent = options[currentIndex];
+            currentIndex = (currentIndex + 1) % options.length;
+    
+            // Apply transition effect
+            noButton.style.transition = "transform 0.3s ease";
+            noButton.style.transform = "scale(1.1)";
+            setTimeout(() => {
+                noButton.style.transform = "scale(1)";
+            }, 300);
+        });
+    </script>
+    
+</body>
+</html>
